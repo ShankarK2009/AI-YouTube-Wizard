@@ -1,0 +1,5 @@
+# Gotta make sure my API keys dont get leaked
+.env
+
+# Ignore Python cache files cause they are not needed
+__pycache__/
