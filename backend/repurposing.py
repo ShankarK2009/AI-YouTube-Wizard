@@ -1,4 +1,4 @@
-from .gemini_client import gemini_generate
+from gemini_client import gemini_generate
 
 def to_blog_post(transcript):
     """Convert transcript to a blog post."""

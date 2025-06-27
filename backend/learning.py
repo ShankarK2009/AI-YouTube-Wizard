@@ -1,4 +1,4 @@
-from .gemini_client import gemini_generate
+from gemini_client import gemini_generate
 
 def generate_quiz(transcript):
     """Generate a quiz from the transcript."""

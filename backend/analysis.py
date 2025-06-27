@@ -1,4 +1,4 @@
-from .gemini_client import gemini_generate
+from gemini_client import gemini_generate
 
 def sentiment_analysis(transcript):
     """Perform sentiment analysis on the transcript."""

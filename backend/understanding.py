@@ -1,4 +1,4 @@
-from .gemini_client import gemini_generate
+from gemini_client import gemini_generate
 
 def generate_summary(transcript):
     """Generate a multi-sentence summary from the transcript using Gemini."""

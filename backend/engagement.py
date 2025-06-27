@@ -1,4 +1,4 @@
-from .gemini_client import gemini_generate
+from gemini_client import gemini_generate
 
 def generate_qa_questions(transcript):
     """Generate QA questions from the transcript."""
