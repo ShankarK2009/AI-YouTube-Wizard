@@ -78,3 +78,50 @@ if st.sidebar.button("Run Analysis"):
     except Exception as e:
         st.error(f"Error: {e}")
         st.stop()
+
+    st.header("Results")
+    if summary:
+        st.subheader("Summary")
+        st.write(generate_summary(transcript))
+    if chapters:
+        st.subheader("Chapters")
+        st.write(extract_chapters(transcript))
+    if key_takeaways:
+        st.subheader("Key Takeaways")
+        st.write(extract_key_takeaways(transcript))
+    if quiz:
+        st.subheader("Quiz")
+        st.write(generate_quiz(transcript))
+    if explain5:
+        st.subheader("Explain Like Five")
+        st.write(explain_like_five(transcript))
+    if vocab:
+        st.subheader("Vocabulary")
+        st.write(extract_vocabulary(transcript))
+    if blog:
+        st.subheader("Blog Post")
+        st.write(to_blog_post(transcript))
+    if tweet:
+        st.subheader("Tweet Thread")
+        st.write(to_tweet_thread(transcript))
+    if linkedin:
+        st.subheader("Linkedin Post")
+        st.write(to_linkedin_post(transcript))
+    if slides:
+        st.subheader("Slide Deck")
+        st.write(to_slide_deck(transcript))
+    if insta:
+        st.subheader("Instagram Caption")
+        st.write(to_instagram_caption(transcript))
+    if sentiment:
+        st.subheader("Sentiment Analysis")
+        st.write(sentiment_analysis(transcript))
+    if emotion:
+        st.subheader("Emotion Detection")
+        st.write(emotion_detection(transcript))
+    if comments:
+        st.subheader("Comments Analysis")
+        st.write(comments_analysis(transcript))
+    if qa:
+        st.subheader("QA Questions")
+        st.write(generate_qa_questions(transcript))
