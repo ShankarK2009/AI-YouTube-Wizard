@@ -3,3 +3,6 @@
 
 # Ignore Python cache files cause they are not needed
 __pycache__/
+
+#Ignore useless MacOS System files
+.DS_Store
